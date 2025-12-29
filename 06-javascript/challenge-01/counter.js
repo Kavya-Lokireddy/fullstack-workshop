@@ -46,7 +46,7 @@ function increment(){
 function decrement(){
 
     if(count>0){
-        count--;
+        count-=step;
         updateDisplay();
     }
     document.getElementById("value1").innerHTML=count;
