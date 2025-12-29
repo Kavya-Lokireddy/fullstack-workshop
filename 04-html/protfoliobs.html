@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavya Lokireddy | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Kavya</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+<section id="home" class="bg-primary text-white text-center py-5" style="margin-top:56px;">
+    <div class="container py-5">
+        <h1 class="display-4 fw-bold">Kavya Lokireddy</h1>
+        <p class="lead">Full Stack Java Developer</p>
+        <a href="#projects" class="btn btn-info btn-lg mt-3">View My Work</a>
+    </div>
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">About Me</h2>
+
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="./profile.jpg" alt="Profile" class="img-fluid rounded-circle" width="200" height="200">
+            </div>
+
+            <div class="col-md-8">
+                <p>
+                    I am a Computer Science graduate with a strong interest in Full Stack Development.
+                    I am a motivated Full Stack Developer with a strong foundation in computer science
+                and practical experience in developing web applications using modern technologies.
+               I enjoy writing clean, efficient code and continuously improving my technical skills.
+                I enjoy building responsive web applications and learning new technologies. 
+                </p>
+
+                <h5>Skills</h5>
+                <ul>
+                    <li>Java, JDBC</li>
+                    <li>HTML, CSS, Bootstrap</li>
+                    <li>MySQL</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROJECTS SECTION ================= -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Projects</h2>
+
+        <div class="row g-4">
+
+            <!-- Project Card 1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+                    <img src="images/project1.jpg" class="card-img-top" alt="Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text">Responsive personal portfolio using Bootstrap.</p>
+                        <span class="badge bg-primary">HTML</span>
+                        <span class="badge bg-success">Bootstrap</span>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+                    <img src="images/project2.jpg" class="card-img-top" alt="Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Student Management</h5>
+                        <p class="card-text">CRUD application using Java and MySQL.</p>
+                        <span class="badge bg-warning text-dark">Java</span>
+                        <span class="badge bg-success">MySQL</span>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card h-100">
+                    <img src="images/project4.jpg" class="card-img-top" alt="Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Login System</h5>
+                        <p class="card-text">Authentication system with validation.</p>
+                        <span class="badge bg-danger">Java</span>
+                        <span class="badge bg-dark">JDBC</span>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="#" class="btn btn-outline-info btn-sm">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Contact Me</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4" required></textarea>
+                    </div>
+
+                    <button class="btn btn-success">Send Message</button>
+                </form>
+            </div>
+
+            <div class="col-md-6 mt-4 mt-md-0">
+                <h5>Get in Touch</h5>
+                <p>Email: kavya.lokireddy@gmail.com</p>
+                <p>Phone: +91 7702051246</p>
+                <p>Location: India</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row text-center text-md-start">
+
+            <div class="col-md-4 mb-3">
+                <h6>Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#about" class="text-white text-decoration-none">About</a></li>
+                    <li><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <h6>Follow Me</h6>
+                <a href="https://github.com/Kavya-Lokireddy" class="text-white me-3"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+            <div class="col-md-4">
+                <p class="mb-0">&copy; 2025 Kavya Lokireddy. All rights reserved.</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</body>
+</html>

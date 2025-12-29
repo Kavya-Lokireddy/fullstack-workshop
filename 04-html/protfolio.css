@@ -1,0 +1,29 @@
+body{
+    background-color: #ffece5;
+    /* background-color: #0F172A; */
+}
+nav{
+    border-style:hidden;
+    text-align:right;
+    padding:0.5em;
+    background-color:#d9bfbf;
+    a{
+        margin-right: 20px; 
+        font-size:medium;
+        color:#ff668c;
+    }
+}
+h1.Name,h3.Domain{
+    text-align:center;
+    color:#e67300;
+}
+footer{
+    text-align:center;
+}
+button{
+    background-color:#5bd75b;
+    color:#F9FAFB;
+}
+h3.aboutme,h3.projects,h3.contactform{
+    color:#9999ff;
+}
