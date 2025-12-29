@@ -1,61 +1,55 @@
 let count=0;
 let step=1;
 
+const value1=document.getElementById("value1");
+value1.innerHTML=`${count}`;
 
-document.getElementById("value1").innerHTML=count;
-
-let button1=document.getElementById("increment");
-button1.addEventListener("click",increment);
+const button1=document.getElementById("increment");
+button1.addEventListener("click",() =>increment());
 
 
-let button2=document.getElementById("reset");
-button2.addEventListener("click",reset);
+const button2=document.getElementById("reset");
+button2.addEventListener("click",() =>reset());
 
-let button3=document.getElementById("decrement");
-button3.addEventListener("click",decrement);
+const button3=document.getElementById("decrement");
+button3.addEventListener("click",() =>decrement());
 
-document.getElementById("one").addEventListener("click",step_selector1);
-document.getElementById("five").addEventListener("click",step_selector5);
-document.getElementById("ten").addEventListener("click",step_selector10);
+document.getElementById("one").addEventListener("click",() =>setStep(1));
+document.getElementById("five").addEventListener("click",() =>setStep(5));
+document.getElementById("ten").addEventListener("click",() =>setStep(10));
 
-function step_selector1(){
-    step=1;
-}
-function step_selector5(){
-    step=5;
-}
-function step_selector10(){
-    step=10;
-}
+const setStep = (value) =>{
+    step=value;
+};
 
-function reset(){
+const reset = () =>{
     count=0;
     updateDisplay();
     document.getElementById("value1").innerHTML=count;
-}
+};
 
-function increment(){
+const increment = () =>{
     
     if(count>=0){
         count+=step;
         updateDisplay();
     }
    document.getElementById("value1").innerHTML=count;
-}
+};
 
-function decrement(){
+const decrement = () =>{
 
     if(count>0){
         count-=step;
         updateDisplay();
     }
     document.getElementById("value1").innerHTML=count;
-}
+};
 
-function updateDisplay(){
+const updateDisplay = () =>{
     const value=document.getElementById("value1");
 
-    value.innerHTML=count;
+    value.innerHTML=`${count}`;
 
     if(count>0){
         value.style.color="green";
@@ -65,6 +59,6 @@ function updateDisplay(){
         // The red color doesnot apply because the there is no negative values.
         value.style.color="red";
     }
-}
+};
 
 

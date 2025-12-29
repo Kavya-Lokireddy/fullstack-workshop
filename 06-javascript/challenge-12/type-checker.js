@@ -12,7 +12,7 @@ const typeOf = (value) =>{
     //Handle primitives & functions
     const primitiveType = typeof value;
     if(primitiveType!=='object'){
-        return primitiveType;
+        return `${primitiveType}`;
     }
 
     //handle built-in objects

@@ -3,14 +3,14 @@ let isEmailValid=false;
 let isPasswordValid=false;
 let isConfirmValid=false;
 
-let button=document.getElementById("username");
-button.addEventListener("blur",user_name);
+const button=document.getElementById("username");
+button.addEventListener("blur",() => user_name());
 
-function user_name(){
+const user_name = () =>{
 
-    let user=document.getElementById("username").value;
+    const user=document.getElementById("username").value;
 
-    let user_val=/^[a-zA-Z0-9]{3,15}$/;
+    const user_val=/^[a-zA-Z0-9]{3,15}$/;
 
     if(user_val.test(user)){
        document.getElementById("valid_user").innerHTML="Username is valid";
@@ -22,15 +22,15 @@ function user_name(){
        isUserValid=false;
     }
     checkFormValidity();
-}
+};
 
-let email=document.getElementById("email");
-email.addEventListener("blur",email_validate);
+const email=document.getElementById("email");
+email.addEventListener("blur",() => email_validate());
 
-function email_validate(){
-    let email_user=document.getElementById("email").value;
+const email_validate = () =>{
+    const email_user=document.getElementById("email").value;
 
-    let email_reg=/^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const email_reg=/^[a-zA-Z0-9._]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if(email_reg.test(email_user)){
         document.getElementById("valid_email").innerHTML="Email is valid";
@@ -42,19 +42,16 @@ function email_validate(){
         isEmailValid=false;
     }
     checkFormValidity();
-}
+};
 
-let con=document.getElementById("password");
-con.addEventListener("input",password_check);
-
-let conpwd=document.getElementById("confirmpwd");
-conpwd.addEventListener("blur",confirmpwd_check);
+const con=document.getElementById("password");
+con.addEventListener("input",() => password_check());
 
 
-function password_check(){
+const password_check = () =>{
 
-    let pwd=document.getElementById("password").value;
-    let result=validatePassword(pwd);
+    const pwd=document.getElementById("password").value;
+    const result=validatePassword(pwd);
 
     document.getElementById("password_score").innerHTML=`Strength: ${result.score}/100`;
 
@@ -68,11 +65,12 @@ function password_check(){
         isPasswordValid=false;
     }
     checkFormValidity();
-}
-function validatePassword(pwd) {
+};
+
+const validatePassword = (pwd) => {
     let score = 0;
-    let errors = [];
-    let suggestions = [];
+    const errors = [];
+    const suggestions = [];
 
     const commonPasswords = ["password", "123456", "qwerty", "admin", "letmein"];
 
@@ -149,12 +147,15 @@ function validatePassword(pwd) {
         errors,
         suggestions
     };
-}
+};
+
+const conpwd=document.getElementById("confirmpwd");
+conpwd.addEventListener("blur",() => confirmpwd_check());
 
 
-function confirmpwd_check(){
-    let pwd_user=document.getElementById("password").value;
-    let confirmpwd_user=document.getElementById("confirmpwd").value;
+const confirmpwd_check = () =>{
+    const pwd_user=document.getElementById("password").value;
+    const confirmpwd_user=document.getElementById("confirmpwd").value;
 
     if(pwd_user === confirmpwd_user){
         document.getElementById("valid_confirmpwd").innerHTML="Password is matched";
@@ -166,13 +167,13 @@ function confirmpwd_check(){
         isConfirmValid=false;
     }
     checkFormValidity();
-}
+};
 
-function checkFormValidity(){
+const checkFormValidity = () =>{
     const submitbtn=document.getElementById("submitBtn");
     if(isUserValid && isEmailValid && isPasswordValid && isConfirmValid){
         submitbtn.disabled=false;
     }else{
         submitbtn.disabled=true;
     }
-}
+};

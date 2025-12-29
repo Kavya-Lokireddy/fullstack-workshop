@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* the # is used because it is the id(quiz)
+           for the class we use .quiz
+         */
+        #quiz{
+            padding-left:30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Quiz</h1>
+    </header>
+    <section id="quiz">
+        <form action="#" method="post">
+            <div>
+                <label for="name1">Enter your Name:</label><br>
+                <input type="text" id="name1" required/>
+            </div>
+            <br>
+            <h3>Please enter the answers in the box</h3>
+            <div>
+                <label for="q1">What is the capital of India ?</label><br>
+                <input type="text" id="q1" required/>
+            </div>
+            <br>
+            <div>
+                <label for="q2">Is Javascript case-sensitive or not(give yes or no)?</label><br>
+                <input type="text" id="q2" required/>
+            </div>
+            <br>
+            <div>
+                <label for="q3">Can alert() accepts multiple arguments(give yes or no) ?</label><br>
+                <input type="text" id="q3" required/>
+            </div>
+            <br>
+            <button type="button" class="btn btn-success" id="submit">Submit</button>
+        </form>
+    </section>
+    <script>
+
+        const button1=document.getElementById("submit");
+        button1.addEventListener("click",() =>track());
+
+        const track =() =>{
+            const ans1=document.getElementById("q1").value.toLowerCase();
+            const ans2=document.getElementById("q2").value.toLowerCase();
+            const ans3=document.getElementById("q3").value.toLowerCase();
+            const sname=document.getElementById("name1").value;
+            let count=0;
+
+            if(ans1 == "new delhi"){
+                count++;
+            }
+            if(ans2 == "yes"){
+                count++;
+            }
+            if(ans3 == "no"){
+                count++;
+            }
+            alert(`${sname} your score: ${count}`);
+            
+            document.getElementById("q1").value="";
+            document.getElementById("q2").value="";
+            document.getElementById("q3").value="";
+            document.getElementById("name1").value="";
+
+        };
+    </script>
+</body>
+</html>
