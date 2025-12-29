@@ -1,6 +1,8 @@
 
 #!/bin/bash
 
+set -e
+
 # Analyze log file for errors
 LOG_FILE=${1:-"C:\Users\lokir\fullstack-workshop\01-linux\sample-log.txt"}
 
@@ -12,7 +14,7 @@ fi
 echo "====== Log Analysis Report ======="
 echo "File: $LOG_FILE"
 echo ""
-total_lines=$(awk 'END {print NR}' sample-log.txt)
+total_lines=$(awk 'END {print NR}' "$LOG_FILE")
 echo "Total Lines: $total_lines"
 echo "-------------------------------"
 echo "INFO: $(grep -c 'INFO' "$LOG_FILE")"
