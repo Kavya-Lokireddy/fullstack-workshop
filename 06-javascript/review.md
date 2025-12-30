@@ -1,13 +1,13 @@
 # Review: 06-javascript
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-29 15:55
+**Review Date:** 2025-12-30 12:19
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 9
+**Files submitted:** 12
 
 ### Code Review
 
@@ -24,15 +24,15 @@
 
 📄 **counter.js**
    Path: `06-javascript/challenge-01/counter.js`
-   Lines: 70
+   Lines: 64
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
-    - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
     - 💡 Consider using array methods (map, filter, reduce)
 
-   **Score: 2/5**
+   **Score: 4/5**
 
 📄 **form-validator.html**
    Path: `06-javascript/challenge-02/form-validator.html`
@@ -51,11 +51,11 @@
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
-    - 💡 Consider using arrow functions
+    - ✅ Uses arrow functions
     - 💡 Consider using template literals for string interpolation
     - 💡 Consider using array methods (map, filter, reduce)
 
-   **Score: 2/5**
+   **Score: 3/5**
 
 📄 **type-checker.html**
    Path: `06-javascript/challenge-12/type-checker.html`
@@ -75,10 +75,10 @@
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
     - ✅ Uses arrow functions
-    - 💡 Consider using template literals for string interpolation
+    - ✅ Uses template literals
     - 💡 Consider using array methods (map, filter, reduce)
 
-   **Score: 3/5**
+   **Score: 4/5**
 
 📄 **validate-password.html**
    Path: `06-javascript/challenge-13/validate-password.html`
@@ -93,17 +93,50 @@
 
 📄 **validate-password.js**
    Path: `06-javascript/challenge-13/validate-password.js`
-   Lines: 177
+   Lines: 178
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
-    - 💡 Consider using arrow functions
+    - ✅ Uses arrow functions
     - ✅ Uses template literals
     - 💡 Consider using array methods (map, filter, reduce)
 
-   **Score: 3/5**
+   **Score: 4/5**
 
-### Topic Score: 30 / 40 (75%)
+📄 **bmi.html**
+   Path: `06-javascript/exercise-01/bmi.html`
+   Lines: 63
+
+    - ✅ Has `<!DOCTYPE html>`
+    - ✅ Uses semantic HTML5 tags
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
+
+   **Score: 5/5**
+
+📄 **quiz.html**
+   Path: `06-javascript/exercise-01/quiz.html`
+   Lines: 77
+
+    - ✅ Has `<!DOCTYPE html>`
+    - ✅ Uses semantic HTML5 tags
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
+
+   **Score: 5/5**
+
+📄 **tempconverter.html**
+   Path: `06-javascript/exercise-01/tempconverter.html`
+   Lines: 57
+
+    - ✅ Has `<!DOCTYPE html>`
+    - ✅ Uses semantic HTML5 tags
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
+
+   **Score: 5/5**
+
+### Topic Score: 50 / 55 (90%)
 
 ---
 
