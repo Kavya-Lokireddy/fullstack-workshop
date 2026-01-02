@@ -1,7 +1,7 @@
 # Review: 09-mysql
 
 **Exercise:**  Exercise: E-Commerce Database Design and Queries
-**Review Date:** 2026-01-02 13:59
+**Review Date:** 2026-01-02 16:52
 
 ---
 
@@ -43,12 +43,12 @@ Please complete the correct exercise and resubmit.
     Expected: department, employee_count, avg_salary, max_salary
 
     - ✅ Groups by department
-    - ❌ Missing COUNT(*) for employee count
+    - ✅ Counts employees (COUNT(*))
     - ✅ Calculates average salary
     - ✅ Finds maximum salary
     - ✅ Filters departments with >2 employees (HAVING)
 
-   **Score: 4/5**
+   **Score: 5/5**
 
 📄 **employee-hierarchy.sql**
    Lines: 1
@@ -127,7 +127,7 @@ Please complete the correct exercise and resubmit.
 
    **Score: 4/4**
 
-### Challenge Score: 28 / 29 (96%)
+### Challenge Score: 29 / 29 (100%)
 
 
 ---
