@@ -25,7 +25,7 @@ const setStep = (value) =>{
 const reset = () =>{
     count=0;
     updateDisplay();
-    document.getElementById("value1").innerHTML=count;
+    document.getElementById("value1").innerHTML=`${count}`;
 };
 
 const increment = () =>{
@@ -34,7 +34,7 @@ const increment = () =>{
         count+=step;
         updateDisplay();
     }
-   document.getElementById("value1").innerHTML=count;
+   document.getElementById("value1").innerHTML=`${count}`;
 };
 
 const decrement = () =>{
@@ -43,7 +43,7 @@ const decrement = () =>{
         count-=step;
         updateDisplay();
     }
-    document.getElementById("value1").innerHTML=count;
+    document.getElementById("value1").innerHTML=`${count}`;
 };
 
 const updateDisplay = () =>{
